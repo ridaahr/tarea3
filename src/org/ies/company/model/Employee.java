@@ -6,9 +6,9 @@ public class Employee {
     private String nif;
     private String name;
     private String surname;
-    private JobPosition jobPosition;
+    private String jobPosition;
 
-    public Employee(String nif, String name, String surname, JobPosition jobPosition) {
+    public Employee(String nif, String name, String surname, String jobPosition) {
         this.nif = nif;
         this.name = name;
         this.surname = surname;
@@ -43,11 +43,11 @@ public class Employee {
         this.surname = surname;
     }
 
-    public JobPosition getJobPosition() {
+    public String getJobPosition() {
         return jobPosition;
     }
 
-    public void setJobPosition(JobPosition jobPosition) {
+    public void setJobPosition(String jobPosition) {
         this.jobPosition = jobPosition;
     }
 

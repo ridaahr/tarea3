@@ -23,27 +23,8 @@ public class EmployeeReader {
         System.out.println("Introduce los apellidos:");
         var surname = scanner.nextLine();
 
-        int option;
-        do {
-            System.out.println("Elige el puesto de trabajo:");
-            System.out.println("1. Programador");
-            System.out.println("2. Jefe de proyecto");
-            System.out.println("3. Diseñador gráfico");
-            System.out.println("4. Administrador de sistemas");
-            option = scanner.nextInt();
-            scanner.nextLine();
-        } while (option != 1 && option != 2 && option != 3 && option != 4);
-
-        JobPosition jobPosition;
-        if (option == 1) {
-            jobPosition = JobPosition.Programador;
-        } else if (option == 2) {
-            jobPosition = JobPosition.Jefe_de_proyecto;
-        } else if (option == 3) {
-            jobPosition = JobPosition.Diseñador_gráfico;
-        } else {
-            jobPosition = JobPosition.Administrador_de_sistemas;
-        }
+        System.out.println("Introduce el puesto de trabajo");
+        var jobPosition = scanner.nextLine();
 
         return new Employee(
                 nif,
